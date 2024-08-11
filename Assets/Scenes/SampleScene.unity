@@ -150,7 +150,7 @@ Transform:
   m_GameObject: {fileID: 148629382}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.8, y: 18.4, z: -50.09}
+  m_LocalPosition: {x: 205.9, y: 121.9, z: 87.7}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -492,7 +492,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 80
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -519,7 +519,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.18, z: -12.83}
+  m_LocalPosition: {x: 0, y: 5, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -550,15 +550,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096033555}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 145.75, y: 102.52, z: 191.80643}
+  m_LocalRotation: {x: 0, y: 0.7305554, z: 0, w: 0.6828534}
+  m_LocalPosition: {x: 150.16, y: 101, z: 192.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 963194228}
   - {fileID: 729437334}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 4, y: 317, z: 359}
+  m_LocalEulerAnglesHint: {x: 2, y: 306, z: 359}
 --- !u!95 &1096033557
 Animator:
   serializedVersion: 5
@@ -589,8 +589,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1096033556}
     m_Modifications:
     - target: {fileID: 951664232382602263, guid: 81ddaef9d4697d84ba75e74a69f45a43, type: 3}
+      propertyPath: yRange
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 951664232382602263, guid: 81ddaef9d4697d84ba75e74a69f45a43, type: 3}
+      propertyPath: MoveSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 951664232382602263, guid: 81ddaef9d4697d84ba75e74a69f45a43, type: 3}
       propertyPath: XMoveSpeed
-      value: 20
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 951664232382602263, guid: 81ddaef9d4697d84ba75e74a69f45a43, type: 3}
+      propertyPath: pitchFactor
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 951664232382602263, guid: 81ddaef9d4697d84ba75e74a69f45a43, type: 3}
+      propertyPath: controlYawFactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 951664232382602263, guid: 81ddaef9d4697d84ba75e74a69f45a43, type: 3}
+      propertyPath: controlRollFactor
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 951664232382602263, guid: 81ddaef9d4697d84ba75e74a69f45a43, type: 3}
+      propertyPath: controlPitchFactor
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 4640082839775715069, guid: 81ddaef9d4697d84ba75e74a69f45a43, type: 3}
       propertyPath: m_Name
