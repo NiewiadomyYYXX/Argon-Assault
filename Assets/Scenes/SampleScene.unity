@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 148629386}
   - component: {fileID: 148629385}
   - component: {fileID: 148629384}
+  - component: {fileID: 148629387}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -227,6 +228,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148629382}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &148629387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148629382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb4c62b317c25c04887f37e5a3c97e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &434851642
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,6 +601,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1096033556}
     m_Modifications:
+    - target: {fileID: 1786942548820598408, guid: 81ddaef9d4697d84ba75e74a69f45a43, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4640082839775715069, guid: 81ddaef9d4697d84ba75e74a69f45a43, type: 3}
       propertyPath: m_Name
       value: Player Ship
@@ -631,6 +648,10 @@ PrefabInstance:
     - target: {fileID: 5417604327655588935, guid: 81ddaef9d4697d84ba75e74a69f45a43, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953408973311929976, guid: 81ddaef9d4697d84ba75e74a69f45a43, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
