@@ -122,6 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelLoadDelay: 1
+  crash: {fileID: 7456047092868868985}
 --- !u!54 &3381049431572819238
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -336,6 +337,11 @@ PrefabInstance:
 --- !u!4 &7386988921000219921 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6408591693112580885, guid: 23f5fc53eea255d408b5453956290708, type: 3}
+  m_PrefabInstance: {fileID: 4498039920812117508}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7456047092868868985 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6419050219731690877, guid: 23f5fc53eea255d408b5453956290708, type: 3}
   m_PrefabInstance: {fileID: 4498039920812117508}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6015052604444899723

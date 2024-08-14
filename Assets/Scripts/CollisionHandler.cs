@@ -8,6 +8,7 @@ public class CollisionHandler : MonoBehaviour
 {
     bool isAlive = true;
     [SerializeField] float levelLoadDelay = 1f;
+    [SerializeField] ParticleSystem crash;
 
     void OnTriggerEnter(Collider other)
     {
@@ -22,6 +23,14 @@ public class CollisionHandler : MonoBehaviour
     {
         isAlive = false;
         GetComponent<PlayerControls>().enabled = false;
+        crash.Play();
+        GetComponentInChildren<MeshRenderer>().enabled = false;
+        MeshRenderer[] childMeshRenderers = GetComponentsInChildren<MeshRenderer>();
+
+        foreach (MeshRenderer renderer in childMeshRenderers)
+        {
+            renderer.enabled = false;
+        }
         Invoke("ReloadLevel", levelLoadDelay);
     }
 
