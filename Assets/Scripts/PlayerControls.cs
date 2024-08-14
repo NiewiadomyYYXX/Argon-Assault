@@ -20,6 +20,19 @@ public class PlayerControls : MonoBehaviour
     {
         ProccessTranslation();
         ProccessRotation();
+        ProccessFiring();
+    }
+
+    void ProccessFiring()
+    {
+        if (Input.GetButton("Fire1"))
+        {
+            Debug.Log("shot");
+        }
+        else 
+        {
+            Debug.Log("noshot");
+        }
     }
 
     void ProccessRotation()
