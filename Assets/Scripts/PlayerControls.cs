@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class PlayerControls : MonoBehaviour
 {
-    [SerializeField] float MoveSpeed = 15f;
+    [SerializeField] float MoveSpeed = 30f;
 
-    [SerializeField] float xRange = 9f;
-    [SerializeField] float yRange = 7f;
+    [SerializeField] float xRange = 10f;
+    [SerializeField] float yRange = 9f;
 
     [SerializeField] float pitchFactor = -2f;
-    [SerializeField] float controlPitchFactor = -50f;
-    [SerializeField] float controlYawFactor = 2.5f;
-    [SerializeField] float controlRollFactor = -20f;
+    [SerializeField] float controlPitchFactor = -10f;
+    [SerializeField] float controlYawFactor = 5f;
+    [SerializeField] float controlRollFactor = -15f;
 
     float xThrow, yThrow;
 
