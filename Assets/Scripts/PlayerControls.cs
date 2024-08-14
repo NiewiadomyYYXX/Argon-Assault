@@ -14,6 +14,8 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] float controlYawFactor = 5f;
     [SerializeField] float controlRollFactor = -15f;
 
+    [SerializeField] GameObject[] lasers;
+
     float xThrow, yThrow;
 
     void Update()
@@ -27,11 +29,20 @@ public class PlayerControls : MonoBehaviour
     {
         if (Input.GetButton("Fire1"))
         {
-            Debug.Log("shot");
+            ActiveLasers(true);
         }
-        else 
+        else
         {
-            Debug.Log("noshot");
+            ActiveLasers(false);
+        }
+    }
+
+    void ActiveLasers(bool isEnabled)
+    {
+        foreach (GameObject laser in lasers)
+        {
+            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = isEnabled;
         }
     }
 
